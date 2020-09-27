@@ -1,0 +1,86 @@
+<title>VISUALLY REPRESENTED</title>
+<link rel="Home" href="index.html">
+<link rel="icon" type="image/png" href="https://i.imgur.com/TahIf0v.png">
+
+
+
+<video id="videoBG" poster="frame.PNG" autoplay muted loop>
+    <source src="bgvideo.mp4" type="video/mp4">
+</video>
+
+
+<img class="vr" src="https://i.imgur.com/MU0VccT.png">
+
+<a class="link1" href="http://localhost:7884/don-toliver-shirt.html"> <p class="hoh" > HEAVEN OR HELL SHIRT </p> </a>
+
+<style>
+
+  .vr {
+    width:60vw;
+    margin-left:20.5vw;
+    margin-top:12vw;
+  }
+
+  .hoh {
+    font-family: helvetica;
+    font-weight: bold;
+    color: #597ebc;
+    font-size: 2vw;
+    text-shadow: 0 0 20px black;
+    text-align: center;
+    margin-top: 5vw;
+  }
+
+  .link1 {
+    text-decoration: none;
+  }
+
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width:auto;
+        height: 100%;
+    }
+
+    .vr {
+      width:90vw;
+      margin-left:7vw;
+      margin-top:87vw;
+    }
+
+
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+
+    .vr {
+      width:90vw;
+      margin-left:7vw;
+      margin-top:87vw;
+    }
+
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+    }
+
+}
+
+</style>
